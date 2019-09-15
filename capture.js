@@ -102,13 +102,13 @@
       axios.post('http://10.186.83.5:8080/classify', formData, {}).then(res => {
         document.getElementById("class").innerHTML = res.data.category;
       });
-
-      $(".rect").remove();
-      for(let i=0; i<3; i++){
-        let x = Math.random() * 300
-        let y = Math.random() * 300
-        drawRect(x, y, x+30, y+30);
-      }
+      // 
+      // $(".rect").remove();
+      // for(let i=0; i<3; i++){
+      //   let x = Math.random() * 300
+      //   let y = Math.random() * 300
+      //   drawRect(x, y, x+30, y+30);
+      // }
 
       photo.setAttribute('src', data);
     } else {
